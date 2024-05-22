@@ -1,4 +1,4 @@
-from app.routes import test_route
+from . import test_route
 
 
 class InitiateRouters:
