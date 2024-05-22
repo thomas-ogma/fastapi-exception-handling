@@ -1,6 +1,6 @@
 # fastapi-exception-handling
 
-Note: `.env` is there in the repo itself as it does not contain any credentials & anyone can quickly get up & running.
+Note: `.env` is there in the repo itself as it does not contain any credentials & anyone can quickly get up & running with the code setup.
 
 We should only raise (throw) exceptions from controllers and let the global error/exception handler catch the error. It's not just limited to FastAPI but applies to all the server-side frameworks e.g. .NET, Express, etc. Adding try/catch to every controller leads to code bloat. The last time Tanmay asked the same question, I asked him to use global validation and exception handlers provided by FastAPI. You can have HTTPException, RequestValidationError, SQLAlchemyException, Exception (generic), etc.
  
